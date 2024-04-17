@@ -19,18 +19,6 @@ from colorama import Fore, Style
 
 ## lista de carpetas seleccionadas
 
-selected = list()
-
-## No es efectivo ante algunas obras codificadas de diferente forma.
-
-# def extract_mxl(file_path):
-#     extracted_content = {}
-#     with zipfile.ZipFile(file_path, 'r') as zip_ref:
-#         for file_info in zip_ref.infolist():
-#             with zip_ref.open(file_info) as file:
-#                 extracted_content[file_info.filename] = file.read().decode('utf-8')  # Asumiendo que los archivos dentro del MXL son texto UTF-8
-#     return extracted_content
-
 def match_lengths(x, y):
         
         l_x = len(x)
@@ -41,6 +29,8 @@ def match_lengths(x, y):
                         
         else:
                 return (False, x)
+
+selected = list()
 
 def select_files(multiple_folder_selection=False, split_by_voices=True):
         composer = None
