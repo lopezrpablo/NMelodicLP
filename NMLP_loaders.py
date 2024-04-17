@@ -15,6 +15,7 @@ import numpy as np
 from numpy import arange
 #import zipfile
 from colorama import Fore, Style
+from decouple import config
 ## Selecciona una carpeta por su nombre. Se adapta a diferentes tamaños de batch.
 
 ## lista de carpetas seleccionadas
