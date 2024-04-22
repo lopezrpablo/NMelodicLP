@@ -13,23 +13,9 @@ import gzip
 import traceback
 import numpy as np
 from numpy import arange
-#import zipfile
 from colorama import Fore, Style
 from decouple import config
-## Selecciona una carpeta por su nombre. Se adapta a diferentes tamaños de batch.
 
-## lista de carpetas seleccionadas
-
-def match_lengths(x, y):
-        
-        l_x = len(x)
-        l_y = len(y)
-        rst = None
-        if l_x > l_y:
-                return (True, x[:l_y], x)
-                        
-        else:
-                return (False, x)
 
 selected = list()
 
