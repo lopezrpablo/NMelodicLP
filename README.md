@@ -33,12 +33,14 @@ El proyecto Neural Music Language Processing (NMLP) es una plataforma integral d
 Para instalar el proyecto, sigue estos pasos:
 1. **Prerrequisitos**: Instala Python, Jupyter Notebook y las librerías requeridas (music21, pandas, numpy, nltk, sklearn, argparse, os, json).
 2. **Clonar el Repositorio**: Clona el repositorio del proyecto NMLP desde GitHub.
-   ```git clone [https://github.com/lopezrpablo/NMelodicLP.git](https://github.com/lopezrpablo/NMelodicLP.git)
+   ```
+   git clone [https://github.com/lopezrpablo/NMelodicLP.git](https://github.com/lopezrpablo/NMelodicLP.git)
    cd NMelodicLP
 3. **Instalar Dependencias**: Instala las dependencias requeridas usando pip.
 
-```Bash
+```
 pip install music21 pandas numpy nltk scikit-learn jupyter
+
 4. **Configurar Variables de Entorno**: Configura las variables de entorno en el archivo env_variables.env.
 
 💻 **MODO DE USO**
@@ -52,7 +54,8 @@ Para usar el proyecto, sigue estos pasos:
 
 📂 Estructura del Proyecto
 
-```NMLP_Project/
+```
+NMLP_Project/
 ├── NMLP_loaders.py
 ├── featureExtractor.py
 ├── 1_main.ipynb
