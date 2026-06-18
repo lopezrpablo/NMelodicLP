@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python" alt="Python">
 </p>
 
-El proyecto Neural Music Language Processing (NMLP) es una plataforma integral de procesamiento y análisis musical que utiliza técnicas de aprendizaje automático y procesamiento de lenguaje natural para extraer características de datos musicales. El proyecto tiene como objetivo proporcionar un entorno robusto e interactivo para investigadores, analistas y entusiastas de la música para explorar y comprender las complejidades del lenguaje musical. Las características principales del proyecto incluyen la carga de datos musicales, la extracción de características y el análisis, así como capacidades de modelado y visualización interactiva.
+El proyecto Natural Melodic Language Processing (NMLP) es una plataforma integral de procesamiento y análisis musical que utiliza técnicas de aprendizaje automático y procesamiento de lenguaje natural para extraer características de datos musicales. El proyecto tiene como objetivo proporcionar un entorno robusto e interactivo para investigadores, analistas y entusiastas de la música para explorar y comprender las complejidades del lenguaje musical. Las características principales del proyecto incluyen la carga de datos musicales, la extracción de características y el análisis, así como capacidades de modelado y visualización interactiva.
 
 ---
 
@@ -20,7 +20,7 @@ El proyecto Neural Music Language Processing (NMLP) es una plataforma integral d
 ---
 
 ## 🛠️ Stack Tecnológico
-* **Frontend**: Jupyter Notebook, librería music21
+* **Frontend**: Jupyter Notebook, Music21
 * **Backend**: Python, pandas, numpy, nltk, sklearn
 * **Base de datos**: Ninguna
 * **Herramientas de IA**: librería music21, librería nltk, librería sklearn
@@ -35,11 +35,11 @@ Para instalar el proyecto, sigue estos pasos:
 2. **Clonar el Repositorio**: Clona el repositorio del proyecto NMLP desde GitHub.
    ```
    git clone [https://github.com/lopezrpablo/NMelodicLP.git](https://github.com/lopezrpablo/NMelodicLP.git)
-   cd NMelodicLP
+   cd NMelodicLP```
+   
 3. **Instalar Dependencias**: Instala las dependencias requeridas usando pip.
 
-```
-pip install music21 pandas numpy nltk scikit-learn jupyter
+```pip install music21 pandas numpy nltk scikit-learn jupyter```
 
 4. **Configurar Variables de Entorno**: Configura las variables de entorno en el archivo env_variables.env.
 
@@ -78,7 +78,7 @@ NMLP_Project/
 │   ├── NMLP_loaders.py
 │   ├── featureExtractor.py
 │   └── ...
-└── ...
+└── ...```
 📸 **Capturas de pantalla**
 🤝 **Contribuyendo**
 Para contribuir al proyecto, por favor sigue estos pasos:
