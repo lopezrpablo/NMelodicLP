@@ -35,25 +35,25 @@ Para instalar el proyecto, sigue estos pasos:
 2. **Clonar el Repositorio**: Clona el repositorio del proyecto NMLP desde GitHub.
    ```bash
    git clone [https://github.com/lopezrpablo/NMelodicLP.git](https://github.com/lopezrpablo/NMelodicLP.git)
-   cd NMelodicLP
-Instalar Dependencias: Instala las dependencias requeridas usando pip.
+   cd NMelodicLP´´´
+3. **Instalar Dependencias**: Instala las dependencias requeridas usando pip.
 
-Bash
-pip install music21 pandas numpy nltk scikit-learn jupyter
-Configurar Variables de Entorno: Configura las variables de entorno en el archivo env_variables.env.
+```Bash
+pip install music21 pandas numpy nltk scikit-learn jupyter´´´
+4. **Configurar Variables de Entorno**: Configura las variables de entorno en el archivo env_variables.env.
 
-💻 Modo de Uso
+💻 **MODO DE USO**
 Para usar el proyecto, sigue estos pasos:
 
-Cargar Datos Musicales: Carga archivos de música usando la función select_files en el script NMLP_loaders.py.
+1. **Cargar Datos Musicales**: Carga archivos de música usando la función select_files en el script NMLP_loaders.py.
 
-Extraer Características: Extrae características de los datos musicales usando el script featureExtractor.py.
+2. **Extraer Características**: Extrae características de los datos musicales usando el script featureExtractor.py.
 
-Analizar y Modelar: Analiza y modela los datos musicales usando el notebook 1_main.ipynb.
+3. **Analizar y Modelar**: Analiza y modela los datos musicales usando el notebook 1_main.ipynb.
 
 📂 Estructura del Proyecto
-Markdown
-NMLP_Project/
+
+```NMLP_Project/
 ├── NMLP_loaders.py
 ├── featureExtractor.py
 ├── 1_main.ipynb
@@ -76,18 +76,18 @@ NMLP_Project/
 │   ├── NMLP_loaders.py
 │   ├── featureExtractor.py
 │   └── ...
-└── ...
-📸 Capturas de pantalla
-🤝 Contribuyendo
+└── ...´´´
+📸 **Capturas de pantalla**
+🤝 **Contribuyendo**
 Para contribuir al proyecto, por favor sigue estos pasos:
 
-Hacer un Fork del Repositorio: Haz un fork del repositorio del proyecto NMLP desde GitHub.
+1. **Hacer un Fork del Repositorio**: Haz un fork del repositorio del proyecto NMLP desde GitHub.
 
-Crear una Rama: Crea una nueva rama para tu contribución.
+2. **Crear una Rama**: Crea una nueva rama para tu contribución.
 
-Hacer Cambios: Realiza cambios en el código y haz un commit con ellos.
+3. **Hacer Cambios**: Realiza cambios en el código y haz un commit con ellos.
 
-Crear un Pull Request: Crea un pull request para fusionar tus cambios en la rama principal.
+4. **Crear un Pull Request**: Crea un pull request para fusionar tus cambios en la rama principal.
 
 📝 Licencia
 El proyecto NMLP está bajo la Licencia MIT.
@@ -95,5 +95,6 @@ El proyecto NMLP está bajo la Licencia MIT.
 📬 Contacto
 Para más información, por favor ponte en contacto con nosotros en [insertar correo electrónico de contacto].
 
-💖 Mensaje de Agradecimiento
+AGRADECIMIENTO
+
 ¡Gracias por usar el proyecto NMLP! Este proyecto está diseñado para proporcionar una plataforma integral de procesamiento y análisis musical para investigadores, analistas y entusiastas de la música. Esperamos que te sea útil.
