@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python" alt="Python">
 </p>
 
-El proyecto Natural Melodic Language Processing (NMLP) es una plataforma integral de procesamiento orientado principalmente a analizar y comparar líneas melódicas de polifonía clásica mediante N-gramas y bags-of-words (BoW). NMLP utiliza fundamentalmente técnicas de procesamiento de lenguaje natural (como el paquete NLTK) y técnicas de aprendizaje automático (Scikit-learn) y visualización (Matplotlib o Pyplot) para, no solo extraer información melódica definitoria de los repertorios abordados, sino que también ver de primera mano las diferencias y semejanzas más importantes de cara a elaborar estudios empíricos de Music Information Retrieval (MIR) y Musicología Digital. Este paquete se ha desarrollado a raíz de una estancia de investigación que tuvo su autor, Pablo López-Rocamora (PhD, Universidad de Murcia) en el Departamento de Lenguajes y Sistemas Informáticos de la Universidad de Alicante en 2023, bajo la supervisión de David Rizo y José Manuel Iñesta Quereda.
+El proyecto Natural Melodic Language Processing (NMLP) es una plataforma integral de procesamiento orientado principalmente a analizar y comparar líneas melódicas de polifonía clásica mediante N-gramas y bags-of-words (BoW). NMLP utiliza fundamentalmente técnicas de procesamiento de lenguaje natural (como el paquete NLTK) y técnicas de aprendizaje automático (Scikit-learn) y visualización (Matplotlib o Pyplot) para, no solo extraer información melódica definitoria de los repertorios abordados, sino que también ver de primera mano las diferencias y semejanzas más importantes de cara a elaborar estudios empíricos de Music Information Retrieval (MIR) y Musicología Digital. Este paquete se ha desarrollado a raíz de una estancia de investigación que tuvo su autor, Pablo López-Rocamora (PhD, Universidad de Murcia) en el Departamento de Lenguajes y Sistemas Informáticos de la Universidad de Alicante en 2023.
 
 El proyecto tiene como objetivo proporcionar un entorno robusto e interactivo para investigadores, analistas y entusiastas de la música para explorar y comprender las complejidades del lenguaje musical. Las características principales del proyecto incluyen la **carga de datos musicales**, la **extracción de características** y **análisis y modelado**, así como capacidades de **visualización**.
 
@@ -162,14 +162,14 @@ Si utilizas NMLP o parte de su código en tus investigaciones, publicaciones aca
 
 ```bibtex
 @software{lopez_rocamora_nmlp,
-  author       = {López-Rocamora, Pablo and Rizo, David and Iñesta, José M.},
+  author       = {López-Rocamora, Pablo},
   title        = {{Natural Melodic Language Processing (NMLP)}},
   month        = oct,
-  year         = {2024},
+  year         = {2026},
   publisher    = {Zenodo},
   version      = {v1.0.0},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {[https://doi.org/10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)}
+  doi          = {10.5281/zenodo.23728128},
+  url          = {https://doi.org/10.5281/zenodo.23728128}
 }
 ```
 
