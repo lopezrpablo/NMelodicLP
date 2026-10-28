@@ -173,8 +173,6 @@ Si utilizas NMLP o parte de su código en tus investigaciones, publicaciones aca
 }
 ```
 
-> **Nota para investigadores:** Sustituye `10.5281/zenodo.XXXXXXX` por el identificador DOI definitivo una vez generado el release en Zenodo.
-
 ---
 
 ## 📝 Licencia
