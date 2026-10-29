@@ -1,4 +1,4 @@
-# Natural Melodic Language Processing (NMLP)
+# Natural Melodic Language Processing (NMelodicLP)
 
 <p align="center">
   <img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge" alt="License: GPL v3">
@@ -13,7 +13,7 @@ El proyecto tiene como objetivo proporcionar un entorno robusto e interactivo pa
 
 ---
 
-## 🚀 Características
+## Características
 - **Carga de Datos Musicales**: NMLP permite a los usuarios cargar y procesar archivos de música en varios formatos, incluyendo archivos MIDI, `**kern`, MEI y MusicXML.
 - **Extracción de Características**: El proyecto utiliza caracteres ASCII para representar los cambios rítmicos e interválicos producidos entre dos notas. Estos elementos se llaman Inter-onset-Ratios (IORs) y mucho tiene que ver con las técnicas diseñadas por Doraisamy y Rüger (2001). En la carga de archivos se habilita la carga multicarpeta, pudiéndose encontrar la música de cada *corpus* a comparar en una de ellas.
 - **Análisis y Modelado**: También implementa capacidades de manipulación de los N-gramas extraídos a través de diferentes escenarios: (a) seleccionar la longitud de los N-gramas; (b) seleccionar si se quiere analizar todas las voces juntas o una de ellas (definidas por orden numérico: S = 1, A = 2, T = 3 y B = 4); (c) elegir el tipo de codificación, ya sea base-40, base-12 o si se quiere indicar el sentido melódico (positivo = ascendente y negativo = descendente) o si se quiere procesar las voces mediante predicciones más cortas (metodología de *sliding window*); (d) se implementan modelos estadísticos como Laplace para medir si un modelo puede predecir mejor o peor una melodía desconocida mediante el cálculo de la "perplejidad" (que se puede traducir como semejanza); (e) la metodología de las BoW entronca directamente con el aprendizaje de máquina y se aplica al entrenar modelos capaces de clasificar obras anónimas basadas en un entrenamiento previo; y (f) incluye diferentes formas de visualización para comprender las complejidades del lenguaje musical.
@@ -21,7 +21,7 @@ El proyecto tiene como objetivo proporcionar un entorno robusto e interactivo pa
 
 ---
 
-## 🛠️ Stack Tecnológico
+## Componentes tecnológicos
 - **Frontend**: Jupyter Notebook, Music21
 - **Backend y análisis**: Python, pandas, numpy, nltk, sklearn
 - **Base de datos**: Carpetas con codificaciones, siempre dentro del directorio "Music_Files".
@@ -29,7 +29,7 @@ El proyecto tiene como objetivo proporcionar un entorno robusto e interactivo pa
 
 ---
 
-## 📦 Instalación
+## Instalación
 Para instalar el proyecto, sigue estos pasos:
 
 1. **Configurar un entorno venv**: Cree un entorno virtual de Python en un directorio de su máquina.
@@ -38,7 +38,7 @@ Para instalar el proyecto, sigue estos pasos:
 python -m venv Nombre_del_entorno
 ```
 
-2. **Clonar el Repositorio**: Dentro de la carpeta de su entorno virtual ejecute los siguientes comandos para iniciar el entorno virtual y clonar el repositorio NMelodicLP.
+2. **Clonar el repositorio**: Dentro de la carpeta de su entorno virtual ejecute los siguientes comandos para iniciar el entorno virtual y clonar el repositorio NMelodicLP.
 
 ```bash
 source bin/activate
@@ -46,7 +46,7 @@ git clone [https://github.com/lopezrpablo/NMelodicLP.git](https://github.com/lop
 cd NMelodicLP
 ```
    
-3. **Instalar Dependencias**: El paquete requiere de la instalación previa de Python, JupyterLab y otras librerías requeridas (music21, pandas, numpy, nltk, sklearn, argparse, os, json). Una vez desplegado el terminal del entorno virtual, se procede a instalar las dependencias con el siguiente comando:
+3. **Instalar dependencias**: El paquete requiere de la instalación previa de Python, JupyterLab y otras librerías requeridas (music21, pandas, numpy, nltk, sklearn, argparse, os, json). Una vez desplegado el terminal del entorno virtual, se procede a instalar las dependencias con el siguiente comando:
 
 ```bash
 pip install -r requirements.txt
@@ -60,11 +60,11 @@ python -m ipykernel install --user --name NMelodicLP --display-name "NMelodicLP"
 
 > **Nota:** Al iniciar JupyterLab (si procede), se deberá cambiar el kernel por el llamado NMelodicLP.
 
-5. **Configurar Variables de Entorno**: Configura las variables de entorno en el archivo .env. Básicamente se debe definir la variable MUSIC_FOLDER con el valor de la carpeta que contendrá todas las partituras codificadas para nuestros experimentos (predefinido como /Comp).
+5. **Configurar variables de entorno**: Configura las variables de entorno en el archivo .env. Básicamente se debe definir la variable MUSIC_FOLDER con el valor de la carpeta que contendrá todas las partituras codificadas para nuestros experimentos (predefinido como /Comp).
 
 ---
 
-## 💻 Modos de uso
+## Modos de uso
 Existen dos modos de utilizar NMLP:
 
 1. **Jupyter Lab**: desplegar este entorno a través del terminal de comandos hace mucho más sencillo el análisis. De hecho, se proporcionan tres cuadernos provistos de comentarios e instrucciones muy útiles: `1_main.ipynb` (análisis preliminar), `2_prediccion_sliding_window.ipynb` (aplicación del análisis anterior con la técnica *sliding window*) y `3_clasificadores.ipynb` (para el uso de modelos de aprendizaje automático sobre nuestra muestra musical).
@@ -87,7 +87,7 @@ python3 featureExtractor.py [opciones]
 
 ---
 
-## 🚀 Funciones importantes y sus parámetros
+## Funciones importantes y sus parámetros
 
 ### `select_files`
 
@@ -121,7 +121,7 @@ def corpora_parser(n, data, data2, diatonic=False, base40=True, stack=True, mode
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del proyecto
 
 ```text
 NMLP_Project/
@@ -148,7 +148,7 @@ NMLP_Project/
 
 ---
 
-## 🤝 Contribuyendo y Citación
+## Contribuyendo y citación
 
 Para contribuir al proyecto, por favor sigue estos pasos:
 
@@ -157,7 +157,7 @@ Para contribuir al proyecto, por favor sigue estos pasos:
 3. **Hacer Cambios**: Realiza cambios en el código y haz un commit con ellos.
 4. **Crear un Pull Request**: Crea un pull request para fusionar tus cambios en la rama principal.
 
-### 📚 Cómo citar este trabajo
+### Cómo citar este trabajo
 Si utilizas NMLP o parte de su código en tus investigaciones, publicaciones académicas o proyectos de Musicología Digital / MIR, por favor cita el repositorio y su registro en Zenodo:
 
 ```bibtex
@@ -175,12 +175,12 @@ Si utilizas NMLP o parte de su código en tus investigaciones, publicaciones aca
 
 ---
 
-## 📝 Licencia
+## Licencia
 Este proyecto está bajo la Licencia **GNU General Public License v3.0** (GNU GPLv3). Consulta el archivo `LICENSE` para más detalles.
 
 ---
 
-## 📬 Contacto
+## Contacto
 Para más información, por favor ponte en contacto conmigo a través de DM o abriendo un *issue* en este repositorio.
 
 ---
